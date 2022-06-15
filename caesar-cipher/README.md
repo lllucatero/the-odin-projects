@@ -1,5 +1,5 @@
 # Caesar's cipher
-# Project proposed as an assignment to The Odin Project
+### Project proposed as an assignment to The Odin Project
 
 Implement a caesar cipher that takes in a string 
 and the shift factor and then outputs the modified string.
