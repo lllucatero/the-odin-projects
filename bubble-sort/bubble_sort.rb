@@ -1,12 +1,9 @@
 def bubble_sort(array)
   loop do
     changed = false
-    array.each_with_index do |number, index|
-      swap = 0
-      if array[index+1] != nil && number > array[index+1]
-        swap = array[index+1]
-        array[index+1] = number
-        array[index] = swap
+    array.each_with_index do |_number, index|
+      if array[index+1] != nil && array[index] > array[index+1]
+        array[index], array[index+1] = array[index+1], array[index]
         changed = true
       end
     end
@@ -15,4 +12,4 @@ def bubble_sort(array)
   p array
 end
 
-bubble_sort([3, 2, 1, 0, 10, 4, 9])
+bubble_sort((1..100).to_a)
