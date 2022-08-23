@@ -12,4 +12,4 @@ def bubble_sort(array)
   p array
 end
 
-bubble_sort((1..100).to_a)
+bubble_sort([5,4,3,2,1])
